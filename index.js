@@ -66,10 +66,6 @@ b.addEventListener("click", function () {
 
       input.value = "";
 
-
-      // error1.remove();
-      // error2.remove();
-
       getDatafor7days(lat, lon);
     })
     .catch((err) => {
