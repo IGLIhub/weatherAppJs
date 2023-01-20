@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
     <title>Waether App</title>
-</head>
-<body>
-    <div id="main">
-        <h1>Ciao Lorenzo!!</h1>
+  </head>
+  <body>
+    <div class="main">
+      
+      <header>
+        <h1 class="title">Waether App</h1>
+        <div class="inputs">
+          <input type="text" name="search_city" class="search_city" placeholder="Inserisci il luogo desiderato"/>
+          <input type="submit" value="Submit" class="submit">
+        </div>
+        <div id="error"></div>
+      </header>
+      
+      <div class="main_info">
+        <h2 class="name" id="name"></h2>
+        <p class="degrees">Gradi</p>
+        <p class="weather">Tempo</p>
+
+        <img src="" alt="" class="img">
+      </div>
+
+      <div class="weather_weakly">
+        <h3>Weakly</h3>
+        <div class="daily_content">
+          <p class="daily_content__item"><span class="daily_name">Domani:</span> <span class="lunedi"></span> <img class="daily_img weather_icon0"></img> </p>
+          <p class="daily_content__item"><span class="daily_name">2° Giorno</span><span class="martedi"></span> <img class="daily_img weather_icon1"></img></p>
+          <p class="daily_content__item"><span class="daily_name">3° Giorno</span><span class="mercoledi"></span> <img class="daily_img weather_icon2"></img></p>
+          <p class="daily_content__item"><span class="daily_name">4° Giorno</span><span class="giovedi"></span> <img class="daily_img weather_icon3"></img></p>
+          <p class="daily_content__item"><span class="daily_name">5° Giorno</span><span class="venerdi"></span> <img class="daily_img weather_icon4"></img></p>
+          <p class="daily_content__item"><span class="daily_name">6° Giorno</span><span class="sabato"></span> <img class="daily_img weather_icon5"></img></p>
+          <p class="daily_content__item"><span class="daily_name">7° Giorno</span> <span class="domenica"></span> <img class="daily_img weather_icon6"></img></p>
+        </div>
+      </div>
+
+      
+      <!-- messaggio di errore -->
+
+      <div class="div_welcome_message">
+      </div>
+
+      <div class="footer">  
+        <p>made by Igli, Lorenzo, Alice, Matteo ©</p>
+      </div>
     </div>
-</body>
+
+
+    <script src="index.js">
+    </script>
+  </body>
 </html>
